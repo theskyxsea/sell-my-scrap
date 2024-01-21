@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Sell My Scrap</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #ffffec;
+      }
+
+      .login-container {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 100px;
+        background-color: #f1e4c3;
+        border-radius: 0.5rem;
+        padding: 10px;
+      }
+      .btn-submit {
+        background-color: #597e52;
+        border-color: #597e52;
+        color: #ffffec;
+      }
+      .primary {
+        color: #597e52;
+      }
+      .required {
+        color: red;
+        font-size: 0.8rem;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container primary login-container">
+      <h2 class="text-center mb-4">Sell My Scrap</h2>
+
+      <div class="form-group">
+        <label for="name">Enter your name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name-el"
+          placeholder="Enter your name"
+        />
+        <div id="required-el" class="hidden required">Name is required !</div>
+      </div>
+      <div class="form-group">
+        <label for="what">What type of scrap materials do you have?</label>
+        <input
+          type="text"
+          class="form-control"
+          id="what-el"
+          placeholder="eg. Papre, Iron, Copper"
+        />
+      </div>
+      <div class="form-group">
+        <label for="specific"
+          >Are there any specific items or materials within the scrap?</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="specific-el"
+          placeholder="eg. Phone, Hardware, Books"
+        />
+      </div>
+      <button onclick="submit()" class="btn btn-submit btn-block">
+        Submit
+      </button>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
