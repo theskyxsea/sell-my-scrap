@@ -27,7 +27,5 @@ let submit = () => {
 };
 
 let callWhatsapp = () => {
-  console.log(message);
-  console.log(`http://wa.me/9922741134?text=${message}`);
-  window.location(`http://wa.me/9922741134?text=${message}`);
+  window.open(`http://wa.me/${whatsappNumber}?text=${message}`);
 };
