@@ -4,6 +4,7 @@ let specificEl = document.getElementById("specific-el");
 let requiredEl = document.getElementById("required-el");
 
 let message = "";
+let whatsappNumber = "9822601204";
 
 let submit = () => {
   if (nameEl.value === "") {
